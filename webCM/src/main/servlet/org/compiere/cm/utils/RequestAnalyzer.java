@@ -125,7 +125,9 @@ public class RequestAnalyzer
 				m_isRedirect = true;
 				m_redirectURL
 					= m_requestURL.substring(0, m_requestURL.indexOf("/", m_requestURL.indexOf (m_serverName) + m_serverName.length ()));
-				m_redirectURL += "/admin/";
+//				m_redirectURL += "/admin/";
+//				Default to webui
+				m_redirectURL += "/webui/";
 			}
 				// JJ
 				//throw new IllegalStateException("Unknown context - Set up Web Project"); // no known context
